@@ -1,0 +1,11 @@
+.presentation {
+    /*border: 1px solid white;*/
+    width: 80%;
+    display: flex;
+}
+
+.avatar {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}

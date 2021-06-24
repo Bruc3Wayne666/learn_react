@@ -1,0 +1,22 @@
+.header {
+    grid-area: header;
+    display: flex;
+    /*border: 1px solid red;*/
+    background-color: #2f3c40;
+    position: sticky;
+    top: 0;
+}
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.title {
+    display: block;
+    margin-left: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+

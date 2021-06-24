@@ -1,0 +1,16 @@
+.nav {
+    height: 200px;
+    border-radius: 16px;
+    grid-area: nav;
+    background-color: #2f3c40;
+    position: sticky;
+    top: 80px;
+}
+
+.navLink {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    display: flex;
+    /*border: 1px solid red;*/
+}

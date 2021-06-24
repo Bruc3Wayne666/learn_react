@@ -1,0 +1,23 @@
+body {
+  box-sizing: border-box;
+  color: white;
+  background-color: #0e2126;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.app-wrapper {
+  display: grid;
+  /*position: relative;*/
+
+  grid-template-areas:
+  "header header"
+  "nav content";
+
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  /*grid-gap: 10px;*/
+}
