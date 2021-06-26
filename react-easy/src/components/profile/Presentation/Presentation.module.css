@@ -5,6 +5,8 @@
 }
 
 .avatar {
+    /*box-shadow: black 4px 4px;*/
+    border-radius: 8px;
     width: 200px;
     height: 300px;
     object-fit: cover;

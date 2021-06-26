@@ -1,0 +1,32 @@
+.dialogs {
+    /*border: 1px solid white;*/
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    background-color: #2f3c40;
+    border-radius: 16px;
+    padding: 5%;
+}
+
+.dialogItems {
+    /*border: 1px solid white;*/
+}
+
+.dialog {
+    margin-bottom: 10px;
+}
+
+.active {
+    transition: 0.4s;
+    font-size: 20px;
+    color: yellowgreen;
+}
+
+.messages {
+     /*border: 1px solid white;*/
+    margin-left: 30%;
+}
+
+.message {
+    /*border: 1px solid white;*/
+}

@@ -1,6 +1,7 @@
 .header {
     grid-area: header;
     display: flex;
+    border-radius: 0 0 16px 16px;
     /*border: 1px solid red;*/
     background-color: #2f3c40;
     position: sticky;

@@ -1,15 +1,15 @@
 import classes from './Profile.module.css'
-import MyPosts from "./MyPosts/MyPosts";
+import MyPosts from "./MyPosts/MyPosts"
 import CreatePost from "./CreatePost/CreatePost";
 import Presentation from "./Presentation/Presentation";
 
 
-const Profile = () => {
+const Profile = props => {
     return (
-        <section className={classes.content}>
+        <section>
             <Presentation />
             <CreatePost />
-            <MyPosts />
+            <MyPosts posts={props.state.posts} />
         </section>
     )
 }

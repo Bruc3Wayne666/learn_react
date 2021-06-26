@@ -4,6 +4,7 @@
     grid-area: nav;
     background-color: #2f3c40;
     position: sticky;
+    margin-top: 20px;
     top: 80px;
 }
 
@@ -13,4 +14,11 @@
     padding-left: 20px;
     display: flex;
     /*border: 1px solid red;*/
+}
+
+.active {
+    transition: 0.3s;
+    font-size: 20px;
+    color: yellowgreen;
+    /*text-decoration: underline;*/
 }

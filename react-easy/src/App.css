@@ -11,6 +11,8 @@ a {
 
 .app-wrapper {
   display: grid;
+  width: 60%;
+  margin: auto;
   /*position: relative;*/
 
   grid-template-areas:
@@ -20,4 +22,10 @@ a {
   grid-template-rows: 60px 1fr;
   grid-template-columns: 2fr 10fr;
   /*grid-gap: 10px;*/
+}
+
+.app-wrapper-content {
+  grid-area: content;
+  margin-top: 20px;
+  margin-left: 5%;
 }

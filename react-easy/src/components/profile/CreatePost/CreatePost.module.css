@@ -14,6 +14,11 @@
 
 .button {
     margin-top: 4px;
-    width: 40%;
+    width: 90%;
     height: 20px;
+}
+
+textarea {
+    background-color: #0e2126;
+    color: white;
 }

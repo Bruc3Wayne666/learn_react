@@ -1,12 +1,13 @@
-import classes from "../MyPosts/MyPosts.module.css";
-import MyPost from "./post/MyPost";
+import classes from "./MyPosts.module.css";
+import Post from "./post/Post";
 
-const MyPosts = () => {
+const MyPosts = props => {
+    const posts = props.posts.map(post => <Post post={post} />)
+
     return (
         <div className={classes.posts}>
-            <MyPost/>
-            <MyPost/>
-            <MyPost/>
+            <h3>My posts</h3>
+            {posts}
         </div>
     )
 }
