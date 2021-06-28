@@ -30,3 +30,31 @@
 .message {
     /*border: 1px solid white;*/
 }
+
+.send {
+    /*border: 1px solid white;*/
+    /*width: 70%;*/
+    margin-top: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    color: white;
+    background-color: #2f3c40;
+    border-radius: 8px;
+    width: 60%;
+    height: 20px;
+    resize: none;
+}
+
+.button {
+    /*border: 1px solid #0e2126;*/
+    color: lightslategrey;
+    margin-left: 4px;
+    /*background-color: #2f3c40;*/
+    height: 20px;
+    padding: 0;
+    border: none;
+    background: none;
+}

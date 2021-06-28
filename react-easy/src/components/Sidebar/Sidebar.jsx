@@ -1,7 +1,7 @@
-import classes from './Nav.module.css'
+import classes from './Sidebar.module.css'
 import {NavLink} from "react-router-dom";
 
-const Nav = () => {
+const Sidebar = () => {
     return (
         <nav className={classes.nav}>
             <div><NavLink className={classes.navLink} activeClassName={classes.active} to='/dialogs'>Messages</NavLink></div>
@@ -11,4 +11,4 @@ const Nav = () => {
     )
 }
 
-export default Nav
+export default Sidebar

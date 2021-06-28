@@ -1,8 +1,7 @@
 import classes from "./MyPosts.module.css";
-import Post from "./post/Post";
 
 const MyPosts = props => {
-    const posts = props.posts.map(post => <Post post={post} />)
+    const posts = props.posts
 
     return (
         <div className={classes.posts}>
