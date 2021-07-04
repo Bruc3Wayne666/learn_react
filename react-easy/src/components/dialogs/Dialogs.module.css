@@ -23,7 +23,7 @@
 }
 
 .messages {
-     /*border: 1px solid white;*/
+    /*border: 1px solid white;*/
     margin-left: 30%;
 }
 
@@ -51,10 +51,17 @@
 .button {
     /*border: 1px solid #0e2126;*/
     color: lightslategrey;
-    margin-left: 4px;
+    margin-left: 2px;
+    border-radius: 8px;
     /*background-color: #2f3c40;*/
-    height: 20px;
-    padding: 0;
+    height: 22px;
+    padding: 2px;
     border: none;
     background: none;
+}
+
+.button:hover {
+    background-color: yellowgreen;
+    color: #0e2126;
+    transition: background-color 0.4s;
 }

@@ -15,17 +15,16 @@ let initialState = {
 const profileReducer = (state = initialState, action) => {
     switch (action.type) {  // Решил впервые попробовать через switch case. Using switch case for the first time
         case ADD_POST:
-            const newPost = {
-                id: 5,
-                text: state.newPostText,
-                likesCount: 0
+            return {
+                ...state,
+                newPostText: '',
+                posts: [...state.posts, {id: 5, text: state.newPostText, likesCount: 0}]
             }
-            state.newPostText = ''
-            state.posts.push(newPost)
-            return state
         case UPDATE_NEW_POST_TEXT:
-            state.newPostText = action.newText
-            return state
+            return {
+                ...state,
+                newPostText: action.newText
+            }
         default:
             return state
     }

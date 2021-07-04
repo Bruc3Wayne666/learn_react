@@ -1,5 +1,6 @@
 .posts {
-    width: 80%;
+    width: 90%;
     margin-top: 10%;
-    border: 1px solid white;
+    border: 1px solid #2f3c40;
+    border-radius: 8px;
 }

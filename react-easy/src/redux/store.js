@@ -1,5 +1,6 @@
 import profileReducer from "./profileReducer";
 import dialogsReducer from "./dialogsReducer";
+import sidebarReducer from "./sidebarReducer";
 
 const postsData = [
     {id: 1, text: 'QQ ALL', likesCount: 3},
@@ -60,15 +61,13 @@ const store = {
     subscribe(observer) {
         this._callSubscriber = observer
     },
-    _callSubscriber() {
-        console.log('---')
-    },
     getState() {
         return this._state
     },
     dispatch(action) {
         this._state.profilePage = profileReducer(this._state.profilePage, action)
         this._state.dialogsPage = dialogsReducer(this._state.dialogsPage, action)
+        this._state.sidebar = sidebarReducer(this._state.sidebar, action)
         this._callSubscriber(this._state)
     }
 }

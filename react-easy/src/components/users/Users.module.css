@@ -1,0 +1,107 @@
+.users {
+    /*background: #2f3c40;*/
+    /*border-radius: 16px;*/
+}
+
+.user {
+    width: 80%;
+    display: flex;
+    /*justify-content: space-around;*/
+    background: #2f3c40;
+    height: 120px;
+    border-radius: 16px;
+    margin-bottom: 3%;
+    transition: ease-in-out 0.2s;
+}
+
+.user:hover {
+    transform: scale(1.02);
+}
+
+.user div {
+    /*border: 1px solid white;*/
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 8%;
+}
+
+.avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.about {
+    width: 25%;
+}
+
+.name {
+    margin-left: 6%;
+    margin-top: 14%;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.status {
+    margin-left: 6%;
+    margin-top: 8%;
+}
+
+.location {
+    width: 20%;
+    margin: auto;
+    color: lightslategrey;
+}
+
+.button {
+    width: 33%;
+}
+
+.button button {
+    /*border: 1px solid white;*/
+    border-radius: 16px;
+    width: 80%;
+    height: 30%;
+    margin-top: 15%;
+    margin-left: 8%;
+    border: none;
+    color: white;
+    /*letter-spacing: 1px;*/
+    font-size: 18px;
+}
+
+.follow {
+    background-color: green;
+}
+
+.follow:hover {
+    background-color: lightgreen;
+    transition: background-color 0.1s;
+}
+
+.unfollow {
+    background-color: red;
+}
+
+.unfollow:hover {
+    background-color: darkred;
+    transition: background-color 0.1s;
+}
+
+.selectedPage {
+    transition: 0.3s;
+    font-size: 24px;
+    font-weight: 900;
+    color: yellowgreen;
+}
+
+.pages {
+    display: flex;
+    justify-content: space-around;
+    /*border: 1px solid white;*/
+    margin-bottom: 3%;
+}
