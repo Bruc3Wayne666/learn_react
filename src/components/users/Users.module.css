@@ -11,11 +11,13 @@
     height: 120px;
     border-radius: 16px;
     margin-bottom: 3%;
-    transition: ease-in-out 0.2s;
+    transition: ease-out 0.4s;
 }
 
 .user:hover {
     transform: scale(1.02);
+    border: 1px solid yellowgreen;
+    /*box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;*/
 }
 
 .user div {
@@ -80,7 +82,7 @@
 
 .follow:hover {
     background-color: lightgreen;
-    transition: background-color 0.1s;
+    transition: background-color 0.7s;
 }
 
 .unfollow {
@@ -89,7 +91,7 @@
 
 .unfollow:hover {
     background-color: darkred;
-    transition: background-color 0.1s;
+    transition: background-color 0.7s;
 }
 
 .selectedPage {
