@@ -17,7 +17,9 @@ import Preloader from "../common/preloader/Preloader";
 class UsersContainer extends React.Component {
     componentDidMount() {
         this.props.toggleIsFetching(true)
-        axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.currentPage}&count=${this.props.pageSize}`)
+        axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.currentPage}&count=${this.props.pageSize}`, {
+            withCredentials: true
+        })
             .then(res => {
                 this.props.toggleIsFetching(false)
                 this.props.setUsers(res.data.items)
@@ -29,7 +31,9 @@ class UsersContainer extends React.Component {
     onPageChanged = page => {
         this.props.setCurrentPage(page)
         this.props.toggleIsFetching(true)
-        axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${page}&count=${this.props.pageSize}`)
+        axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${page}&count=${this.props.pageSize}`, {
+            withCredentials: true
+        })
             .then(res => {
                 this.props.toggleIsFetching(false)
                 this.props.setUsers(res.data.items)
@@ -39,7 +43,9 @@ class UsersContainer extends React.Component {
     onArrow = arrow => {
         this.props.setMoveOnPage(arrow)
         this.props.toggleIsFetching(true)
-        axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.currentPage}&count=${this.props.pageSize}`)
+        axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.currentPage}&count=${this.props.pageSize}`, {
+            withCredentials: true
+        })
             .then(res => {
                 this.props.toggleIsFetching(false)
                 this.props.setUsers(res.data.items)

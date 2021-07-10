@@ -58,10 +58,10 @@
     padding: 2px;
     border: none;
     background: none;
+    transition: 0.4s;
 }
 
 .button:hover {
     background-color: yellowgreen;
     color: #0e2126;
-    transition: background-color 0.4s;
 }

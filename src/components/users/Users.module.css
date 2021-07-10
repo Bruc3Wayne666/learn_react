@@ -16,8 +16,9 @@
 
 .user:hover {
     transform: scale(1.02);
-    border: 1px solid yellowgreen;
-    /*box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;*/
+    /*border: 1px solid yellowgreen;*/
+    -webkit-box-shadow: 0px 1px 7px 6px rgba(0,0,0,0.21);
+    box-shadow: 0px 1px 7px 6px rgba(0,0,0,0.21);
 }
 
 .user div {
@@ -78,24 +79,24 @@
 
 .follow {
     background-color: green;
+    transition: 0.7s;
 }
 
 .follow:hover {
     background-color: lightgreen;
-    transition: background-color 0.7s;
 }
 
 .unfollow {
     background-color: red;
+    transition: 0.7s;
 }
 
 .unfollow:hover {
     background-color: darkred;
-    transition: background-color 0.7s;
 }
 
 .selectedPage {
-    transition: 0.3s;
+    /*transition: 0.3s;*/
     font-size: 24px;
     font-weight: 900;
     color: yellowgreen;
@@ -106,4 +107,10 @@
     justify-content: space-around;
     /*border: 1px solid white;*/
     margin-bottom: 3%;
+}
+
+span:not(.selectedPage):hover {
+    font-size: 22px;
+    transition: 0.2s;
+    cursor: pointer;
 }

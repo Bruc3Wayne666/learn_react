@@ -1,13 +1,18 @@
 import classes from "../Presentation/Presentation.module.css";
 import Info from "./Info/Info";
+import Preloader from "../../common/preloader/Preloader";
 
-const Presentation = () => {
+const Presentation = props => {
+    if (!props.profile) {
+        return <Preloader />
+    }
+
     return (
         <div className={classes.presentation}>
             <div>
-                <img className={classes.avatar} src="https://lacatholics.org/wp-content/uploads/2020/02/la-2160x1215.jpg" alt="llll"/>
+                <img className={classes.avatar} src={props.profile.photos.large} alt="llll"/>
             </div>
-            <Info />
+            <Info name={props.profile.fullName} about={props.profile.aboutMe}/>
         </div>
     )
 }

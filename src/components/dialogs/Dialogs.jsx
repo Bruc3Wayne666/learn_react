@@ -1,9 +1,5 @@
 import classes from "../dialogs/Dialogs.module.css"
-import DialogItem from "./DialogItem/DialogItem";
-import MessageItem from "./Message/Message";
 import React from "react";
-import {sendMessageActionCreator, updateNewMessageTextActionCreator} from "../../redux/dialogsReducer";
-
 
 
 const Dialogs = props => {

@@ -27,13 +27,12 @@
     border-radius: 0 0 8px 8px;
     color: white;
     background-color: #2f3c40;
-    transition: transform 0.5s;
+    transition: 0.4s;
 }
 
 .button:hover {
     background-color: yellowgreen;
     color: #0e2126;
-    transition: background-color 0.4s;
 }
 
 label {
